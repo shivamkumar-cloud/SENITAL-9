@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentinel-9X | Future of Police Patrol</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">SENTINEL<span class="logo-accent">-9X</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#technology">Technology</a></li>
+                <li><a href="#demo">Interactive Demo</a></li>
+                <li><a href="#impact">Impact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">THE FUTURE OF <span class="highlight">POLICE PATROL</span></h1>
+                <p class="hero-subtitle">Introducing Sentinel-9X: The autonomous surveillance drone that revolutionizes law enforcement, increases officer safety, and enhances public security.</p>
+                <div class="hero-buttons">
+                    <a href="#demo" class="btn btn-primary">Interactive Demo</a>
+                    <a href="#features" class="btn btn-secondary">Explore Features</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="drone-container" id="droneModel">
+                    <div class="drone-body">
+                        <div class="drone-center"></div>
+                        <div class="drone-arm arm-1"></div>
+                        <div class="drone-arm arm-2"></div>
+                        <div class="drone-arm arm-3"></div>
+                        <div class="drone-arm arm-4"></div>
+                        <div class="drone-camera"></div>
+                        <div class="drone-light"></div>
+                    </div>
+                    <div class="propeller p1">
+                        <div class="propeller-blade"></div>
+                    </div>
+                    <div class="propeller p2">
+                        <div class="propeller-blade"></div>
+                    </div>
+                    <div class="propeller p3">
+                        <div class="propeller-blade"></div>
+                    </div>
+                    <div class="propeller p4">
+                        <div class="propeller-blade"></div>
+                    </div>
+                </div>
+                <div class="scan-line"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Revolutionary <span class="highlight">Features</span></h2>
+            <p class="section-subtitle">Sentinel-9X is equipped with advanced technology designed to assist and protect law enforcement officers.</p>
+            
+            <div class="features-grid">
+                <div class="feature-card" data-feature="night">
+                    <div class="feature-icon">
+                        <i class="fas fa-moon"></i>
+                    </div>
+                    <h3 class="feature-title">Night Surveillance</h3>
+                    <p class="feature-description">Advanced night vision cameras allow 24/7 patrol operations, giving officers much-needed rest during night shifts.</p>
+                    <div class="feature-detail" id="nightDetail">
+                        <p>Thermal imaging and low-light cameras provide clear visuals even in complete darkness.</p>
+                    </div>
+                    <button class="feature-toggle">Learn More</button>
+                </div>
+                
+                <div class="feature-card" data-feature="scan">
+                    <div class="feature-icon">
+                        <i class="fas fa-satellite-dish"></i>
+                    </div>
+                    <h3 class="feature-title">Area Scanning</h3>
+                    <p class="feature-description">Rapid scanning of large areas with real-time mapping and suspicious activity detection.</p>
+                    <div class="feature-detail" id="scanDetail">
+                        <p>LiDAR and radar technology create detailed 3D maps of patrol areas in seconds.</p>
+                    </div>
+                    <button class="feature-toggle">Learn More</button>
+                </div>
+                
+                <div class="feature-card" data-feature="crime">
+                    <div class="feature-icon">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <h3 class="feature-title">Crime Detection</h3>
+                    <p class="feature-description">AI-powered algorithms identify potential criminal activity and alert officers in real-time.</p>
+                    <div class="feature-detail" id="crimeDetail">
+                        <p>Machine learning models recognize weapons, aggressive behavior, and unusual gatherings.</p>
+                    </div>
+                    <button class="feature-toggle">Learn More</button>
+                </div>
+                
+                <div class="feature-card" data-feature="action">
+                    <div class="feature-icon">
+                        <i class="fas fa-crosshairs"></i>
+                    </div>
+                    <h3 class="feature-title">Manual Intervention</h3>
+                    <p class="feature-description">Remotely operated non-lethal deterrent systems for critical situations.</p>
+                    <div class="feature-detail" id="actionDetail">
+                        <p>Integrated taser, pepper spray, and warning systems controlled by authorized officers only.</p>
+                    </div>
+                    <button class="feature-toggle">Learn More</button>
+                </div>
+                
+                <div class="feature-card" data-feature="vision">
+                    <div class="feature-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="feature-title">360° Surveillance</h3>
+                    <p class="feature-description">Omni-directional cameras provide complete situational awareness with no blind spots.</p>
+                    <div class="feature-detail" id="visionDetail">
+                        <p>Eight high-resolution cameras with 360° coverage and 30x optical zoom capability.</p>
+                    </div>
+                    <button class="feature-toggle">Learn More</button>
+                </div>
+                
+                <div class="feature-card" data-feature="autonomy">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="feature-title">Autonomous Patrol</h3>
+                    <p class="feature-description">Pre-programmed patrol routes with dynamic obstacle avoidance and rerouting.</p>
+                    <div class="feature-detail" id="autonomyDetail">
+                        <p>Can operate for 12+ hours autonomously with automatic return-to-base for charging.</p>
+                    </div>
+                    <button class="feature-toggle">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section class="technology" id="technology">
+        <div class="container">
+            <h2 class="section-title">Advanced <span class="highlight">Technology</span></h2>
+            
+            <div class="tech-container">
+                <div class="tech-visual">
+                    <div class="tech-diagram">
+                        <div class="tech-component" id="aiChip" data-tech="ai">
+                            <div class="component-dot"></div>
+                            <span class="component-label">AI Processor</span>
+                        </div>
+                        <div class="tech-component" id="cameraArray" data-tech="camera">
+                            <div class="component-dot"></div>
+                            <span class="component-label">Camera Array</span>
+                        </div>
+                        <div class="tech-component" id="commSystem" data-tech="comm">
+                            <div class="component-dot"></div>
+                            <span class="component-label">Comms System</span>
+                        </div>
+                        <div class="tech-component" id="sensorSuite" data-tech="sensor">
+                            <div class="component-dot"></div>
+                            <span class="component-label">Sensor Suite</span>
+                        </div>
+                        <div class="tech-component" id="weaponModule" data-tech="weapon">
+                            <div class="component-dot"></div>
+                            <span class="component-label">Non-Lethal Module</span>
+                        </div>
+                        <div class="tech-component" id="batterySystem" data-tech="battery">
+                            <div class="component-dot"></div>
+                            <span class="component-label">Power System</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-info">
+                    <div class="tech-detail active" id="aiDetail">
+                        <h3>AI Crime Detection Processor</h3>
+                        <p>Neural network capable of analyzing visual data in real-time to identify potential threats, weapons, and suspicious behavior with 99.3% accuracy.</p>
+                        <ul>
+                            <li>Processes 120 frames per second</li>
+                            <li>Learns from historical crime data</li>
+                            <li>Adapts to new criminal patterns</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tech-detail" id="cameraDetail">
+                        <h3>Omni-Directional Camera Array</h3>
+                        <p>Eight 4K cameras with night vision capability provide complete 360° coverage with no blind spots, even in complete darkness.</p>
+                        <ul>
+                            <li>Thermal imaging for night operations</li>
+                            <li>30x optical zoom for detailed inspection</li>
+                            <li>Real-time video stabilization</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tech-detail" id="commDetail">
+                        <h3>Secure Communication System</h3>
+                        <p>Encrypted data transmission with multiple redundancy systems ensures constant connection with command centers and officers.</p>
+                        <ul>
+                            <li>Military-grade encryption</li>
+                            <li>Satellite communication backup</li>
+                            <li>Real-time data streaming to patrol cars</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tech-detail" id="sensorDetail">
+                        <h3>Multi-Sensor Detection Suite</h3>
+                        <p>Combination of LiDAR, radar, and acoustic sensors for comprehensive environmental awareness and threat detection.</p>
+                        <ul>
+                            <li>Object detection up to 500 meters</li>
+                            <li>Glass penetration detection</li>
+                            <li>Heat signature analysis</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tech-detail" id="weaponDetail">
+                        <h3>Non-Lethal Intervention Module</h3>
+                        <p>Remotely operated system with multiple non-lethal options for de-escalation and suspect apprehension.</p>
+                        <ul>
+                            <li>Targeted taser system</li>
+                            <li>Pepper spray dispersal</li>
+                            <li>Warning sirens and lights</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tech-detail" id="batteryDetail">
+                        <h3>Extended Duration Power System</h3>
+                        <p>Advanced battery technology allows for 12+ hours of continuous flight with rapid recharge capability.</p>
+                        <ul>
+                            <li>Solar charging during daylight</li>
+                            <li>Automated battery swap at stations</li>
+                            <li>Emergency reserve power</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Demo Section -->
+    <section class="demo" id="demo">
+        <div class="container">
+            <h2 class="section-title">Interactive <span class="highlight">Demo</span></h2>
+            <p class="section-subtitle">Experience how Sentinel-9X operates in a simulated urban environment.</p>
+            
+            <div class="demo-container">
+                <div class="demo-controls">
+                    <h3>Drone Control Panel</h3>
+                    <div class="control-group">
+                        <div class="control-item">
+                            <label for="patrolMode">Patrol Mode</label>
+                            <select id="patrolMode" class="control-select">
+                                <option value="standard">Standard Patrol</option>
+                                <option value="night">Night Surveillance</option>
+                                <option value="search">Search Pattern</option>
+                                <option value="crowd">Crowd Monitoring</option>
+                            </select>
+                        </div>
+                        
+                        <div class="control-item">
+                            <label for="cameraView">Camera View</label>
+                            <select id="cameraView" class="control-select">
+                                <option value="standard">Standard</option>
+                                <option value="thermal">Thermal Vision</option>
+                                <option value="zoom">Zoom (30x)</option>
+                                <option value="wide">Wide Angle</option>
+                            </select>
+                        </div>
+                        
+                        <div class="control-item">
+                            <label>Drone Status</label>
+                            <div class="status-indicators">
+                                <div class="status-indicator active" id="batteryStatus">
+                                    <span class="status-label">Battery</span>
+                                    <div class="status-bar">
+                                        <div class="status-fill" style="width: 78%"></div>
+                                    </div>
+                                    <span class="status-value">78%</span>
+                                </div>
+                                
+                                <div class="status-indicator" id="signalStatus">
+                                    <span class="status-label">Signal</span>
+                                    <div class="status-bar">
+                                        <div class="status-fill" style="width: 95%"></div>
+                                    </div>
+                                    <span class="status-value">95%</span>
+                                </div>
+                                
+                                <div class="status-indicator" id="aiStatus">
+                                    <span class="status-label">AI Active</span>
+                                    <div class="status-light active"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="control-buttons">
+                        <button class="control-btn" id="takeoffBtn">
+                            <i class="fas fa-rocket"></i> Take Off
+                        </button>
+                        <button class="control-btn" id="landBtn" disabled>
+                            <i class="fas fa-landmark"></i> Land
+                        </button>
+                        <button class="control-btn" id="scanBtn">
+                            <i class="fas fa-search"></i> Area Scan
+                        </button>
+                        <button class="control-btn" id="alertBtn">
+                            <i class="fas fa-bell"></i> Test Alert
+                        </button>
+                    </div>
+                    
+                    <div class="alert-panel">
+                        <h4>Alert Log</h4>
+                        <div class="alert-log" id="alertLog">
+                            <div class="alert-entry">
+                                <span class="alert-time">14:32:05</span>
+                                <span class="alert-text">System initialized. Drone ready for patrol.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="demo-visual">
+                    <div class="city-map" id="cityMap">
+                        <div class="map-grid"></div>
+                        <div class="drone-marker" id="droneMarker">
+                            <i class="fas fa-fighter-jet"></i>
+                        </div>
+                        <div class="hotspot" id="hotspot1" data-type="suspicious"></div>
+                        <div class="hotspot" id="hotspot2" data-type="normal"></div>
+                        <div class="hotspot" id="hotspot3" data-type="crime"></div>
+                        <div class="police-station"></div>
+                    </div>
+                    
+                    <div class="camera-feed" id="cameraFeed">
+                        <div class="feed-overlay">
+                            <div class="feed-info">
+                                <span class="feed-label">LIVE FEED</span>
+                                <span class="feed-time" id="feedTime">14:32:10</span>
+                            </div>
+                            <div class="feed-indicators">
+                                <div class="feed-indicator recording"></div>
+                                <div class="feed-indicator ai-active"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="impact" id="impact">
+        <div class="container">
+            <h2 class="section-title">Societal <span class="highlight">Impact</span></h2>
+            
+            <div class="impact-stats">
+                <div class="stat-card">
+                    <div class="stat-number" id="officerSafety">94%</div>
+                    <div class="stat-label">Increase in Officer Safety</div>
+                    <div class="stat-desc">Reduced direct exposure to dangerous situations</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-number" id="crimeReduction">63%</div>
+                    <div class="stat-label">Faster Crime Response</div>
+                    <div class="stat-desc">Reduced response time to incidents</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-number" id="patrolCoverage">300%</div>
+                    <div class="stat-label">Increased Patrol Coverage</div>
+                    <div class="stat-desc">More area covered with fewer resources</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-number" id="costSavings">45%</div>
+                    <div class="stat-label">Reduced Operational Costs</div>
+                    <div class="stat-desc">Lower than traditional patrol methods</div>
+                </div>
+            </div>
+            
+            <div class="impact-content">
+                <div class="impact-text">
+                    <h3>Transforming Law Enforcement</h3>
+                    <p>The Sentinel-9X represents a paradigm shift in policing methodology. By handling routine surveillance and initial threat assessment, it allows human officers to focus on complex decision-making and community engagement.</p>
+                    <p>This technology doesn't replace police officers—it enhances their capabilities, keeps them safer, and allows for more efficient deployment of human resources where they're most needed.</p>
+                    <div class="impact-quote">
+                        <p>"The Sentinel-9X program has allowed our officers to focus on community policing while the drone handles routine surveillance. Officer morale is higher, and we're seeing better outcomes across all metrics."</p>
+                        <cite>- Chief Maria Rodriguez, Metro Police Department</cite>
+                    </div>
+                </div>
+                
+                <div class="impact-visual">
+                    <div class="timeline">
+                        <div class="timeline-item active">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>2023-2024</h4>
+                                <p>Initial testing in controlled environments</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>2025</h4>
+                                <p>Pilot programs in three major cities</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>2026</h4>
+                                <p>Full deployment in 12 cities nationwide</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>2027+</h4>
+                                <p>International deployment and next-gen development</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">SENTINEL<span class="logo-accent">-9X</span></a>
+                    <p>The future of autonomous police patrol technology. Enhancing safety, efficiency, and community trust.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Technology</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#technology">Specifications</a></li>
+                        <li><a href="#demo">Interactive Demo</a></li>
+                        <li><a href="#">White Paper</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Deployment</h4>
+                    <ul>
+                        <li><a href="#">Pilot Programs</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Training</a></li>
+                        <li><a href="#">Integration Guide</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="#">Government Inquiries</a></li>
+                        <li><a href="#">Law Enforcement</a></li>
+                        <li><a href="#">Press & Media</a></li>
+                        <li><a href="#">Ethics Board</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sentinel-9X Advanced Patrol Systems. All rights reserved. This technology is developed with strict adherence to ethical guidelines and privacy regulations.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Ethics Statement</a>
+                    <a href="#">Transparency Report</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
